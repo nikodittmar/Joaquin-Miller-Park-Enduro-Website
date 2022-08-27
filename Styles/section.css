@@ -123,6 +123,7 @@
         flex-direction: column;
     }
     .section-image {
+        width: 80vw;
         margin-bottom: 50px;
         max-width: 400px;
     }
