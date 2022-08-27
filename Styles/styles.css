@@ -1,0 +1,33 @@
+html {
+    overscroll-behavior: none;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.button {
+    background-color:#FF4040;
+    border-radius: 4px;
+    color: white;
+    padding: 10px;
+    border: none;
+    transition: all .2s ease-in-out; 
+}
+
+.button:hover {
+    background-color:#ff7d7d;
+}
+
+.button:active {
+    background-color: #bc1e1e;
+}
+
+.button:disabled {
+    background-color: rgb(187, 187, 187);
+}

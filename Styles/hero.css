@@ -1,0 +1,98 @@
+.header {
+    color: white;
+}
+
+.nav {
+    position: fixed;
+    width: 100vw;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    transition: all .2s ease-in-out; 
+    align-items: center;
+}
+
+.nav-active {
+    background-color: rgb(5, 155, 155);    
+}
+
+.nav-logo {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+
+
+.hero {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../Images/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    filter: brightness(60%);
+}
+
+.hero-content {
+    position: relative;
+    text-align: center;
+    margin: 0.625rem;
+}
+
+.hero-title {
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 600px) {
+    .hero-title {
+        font-size: 4rem;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hero-title {
+        font-size: 3rem;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 0.5rem;
+}
+
+.scroll-note {
+    position: absolute;
+    top: 100vh;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    margin-top: -100px;
+    transition: all .2s ease-in-out; 
+}
+
+.scroll-note-hidden {
+    color: #FFFFFF00;
+}
+
+.scroll-text {
+    margin-bottom: 0;
+}
