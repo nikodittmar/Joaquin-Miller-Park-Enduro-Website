@@ -178,7 +178,7 @@
     .article-hero {
         height: 360px;
     }
-    .sponsor { 
+    .sponsor img { 
         width: 100px;
     }
 }
@@ -196,7 +196,7 @@
     .article-hero {
         height: 360px;
     }
-    .sponsor { 
+    .sponsor img { 
         width: 100px;
     }
 }
@@ -214,7 +214,7 @@
     .article-hero {
         height: 300px;
     }
-    .sponsor { 
+    .sponsor img { 
         width: 80px;
     }
 }
