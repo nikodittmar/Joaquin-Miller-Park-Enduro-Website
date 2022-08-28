@@ -178,6 +178,9 @@
     .article-hero {
         height: 360px;
     }
+    .sponsor { 
+        width: 100px;
+    }
 }
 
 @media screen and (max-width: 700px) and (min-width: 480px) {
@@ -193,6 +196,9 @@
     .article-hero {
         height: 360px;
     }
+    .sponsor { 
+        width: 100px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -207,6 +213,9 @@
     }
     .article-hero {
         height: 300px;
+    }
+    .sponsor { 
+        width: 80px;
     }
 }
 
@@ -257,3 +266,4 @@
     justify-content: center;
     transition: all 0.2s ease-in-out;
 }
+
