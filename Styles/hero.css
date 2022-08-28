@@ -93,7 +93,7 @@
 .scroll-note {
     position: absolute;
     top: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
+    top: calc(var(--vh, 1vh) * 100);
     width: 100%;
     text-align: center;
     z-index: 1;
