@@ -1,6 +1,4 @@
 .section {
-    padding-left: 50px;
-    padding-right: 50px;
     padding-top: 25px;
     padding-bottom: 25px;
 }
@@ -73,6 +71,8 @@
         justify-content: center;
         align-items: center;
         gap: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
     }
     .section-image {
         width: 30%;
@@ -85,6 +85,8 @@
         display: flex;
         align-items: center;
         flex-direction: column;
+        padding-left: 50px;
+        padding-right: 50px;
     }
     .section-image {
         width: 60%;
@@ -116,14 +118,54 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) and (min-width: 400px) {
     .section {
         display: flex;
         align-items: center;
         flex-direction: column;
+        padding-left: 50px;
+        padding-right: 50px;
     }
     .section-image {
-        width: 80vw;
+        width: calc(100vw - 100px);
+        margin-bottom: 50px;
+        max-width: 400px;
+    }
+    .section-text {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .section-buttons {
+        justify-content: center !important;
+    }
+
+    .left>.section-text>.section-header, .left>.section-text>.section-description {
+        text-align: center;
+    }
+
+    .right>.section-text>.section-header, .right>.section-text>.section-description {
+        text-align: center;
+    }
+
+    .right>.section-image {
+        order: 1;
+    }
+    
+    .right>.section-text {
+        order: 2;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .section {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .section-image {
+        width: calc(100vw - 60px);
         margin-bottom: 50px;
         max-width: 400px;
     }

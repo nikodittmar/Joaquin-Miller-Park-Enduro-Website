@@ -1,6 +1,4 @@
 .text {
-    padding-left: 50px;
-    padding-right: 50px;
     padding-top: 25px;
     padding-bottom: 25px;
     max-width: 810px;
@@ -23,4 +21,18 @@
     display: flex;
     gap: 10px;
     justify-content: center;
+}
+
+@media screen and (min-width: 400px) {
+    .text {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .text {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }
