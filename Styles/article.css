@@ -149,7 +149,6 @@
 .article-hero {
     position: relative;
     width: 100vw;
-    height: 360px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -172,6 +171,13 @@
         margin-left: 30px;
         margin-right: 30px;
     }
+    .article {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .article-hero {
+        height: 360px;
+    }
 }
 
 @media screen and (max-width: 700px) and (min-width: 480px) {
@@ -180,13 +186,27 @@
         margin-left: 20px;
         margin-right: 20px;
     }
+    .article {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .article-hero {
+        height: 360px;
+    }
 }
 
 @media screen and (max-width: 480px) {
     .article-hero-title {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         margin-left: 20px;
         margin-right: 20px;
+    }
+    .article {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .article-hero {
+        height: 300px;
     }
 }
 
@@ -200,8 +220,6 @@
     max-width: 810px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 50px;
-    padding-right: 50px;
     padding-top: 50px;
 }
 
