@@ -26,10 +26,13 @@
 .hero {
     position: relative;
     width: 100vw;
-    height: 100vh;
+    
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+
 }
 
 .hero::before {
@@ -90,6 +93,7 @@
 .scroll-note {
     position: absolute;
     top: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     width: 100%;
     text-align: center;
     z-index: 1;
